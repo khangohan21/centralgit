@@ -1,0 +1,12 @@
+file 'hello.txt' do
+  content 'Welcome to Chef'
+end
+$ sudo chef-apply hello.rb
+Recipe: (chef-apply cookbook)::(chef-apply recipe)
+  * file[hello.txt] action create
+    - create new file hello.txt
+    - update content in file hello.txt from none to 40a30c
+    --- hello.txt    2014-08-10 22:27:44.000000000 -0700
+    +++ /tmp/.hello.txt20140810-14225-6e7qc7    2014-08-10 22:27:44.000000000
+    -0700 @@ -1 +1,2 @@
+    +Welcome to Chef
